@@ -20,7 +20,7 @@ import AccordionItem from '../components/elements/AccordionItem';
 import placeholderImg from './../assets/images/image-placeholder.png';
 
 
-class Secondary extends React.Component {
+class Gallery extends React.Component {
 
   state = {
     demoModalActive: false
@@ -243,4 +243,4 @@ const modalFormStyle = {
   margin: '0 auto'
 }
 
-export default Secondary;
+export default Gallery;

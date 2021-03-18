@@ -13,8 +13,8 @@ class Home extends React.Component {
       <React.Fragment>
         <HeroFull className="illustration-section-01" />
         <Tech topDivider bottomDivider />
+        <FeaturesTiles topDivider bottomDivider />
         <FeaturesTabs />
-        <FeaturesTiles topDivider />
         {/*<Testimonial topDivider bottomOuterDivider className="gradient-section" />*/}
         {/*<Pricing topDivider pricingSlider className="has-bg-color-cut" />*/}
         <Cta hasBgColor invertColor split />

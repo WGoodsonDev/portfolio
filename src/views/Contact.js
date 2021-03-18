@@ -1,7 +1,7 @@
 import React from 'react';
 import SignupForm from '../components/sections/SignupForm';
 
-class Signup extends React.Component {
+class Contact extends React.Component {
   render() {
     return (
       <SignupForm className="illustration-section-01" />
@@ -9,4 +9,4 @@ class Signup extends React.Component {
   }
 }
 
-export default Signup;
+export default Contact;

@@ -10,9 +10,9 @@ import LayoutSignin from './layouts/LayoutSignin';
 
 // Views
 import Home from './views/Home';
-import Secondary from './views/Secondary';
+import Gallery from './views/Gallery';
 import Login from './views/Login';
-import Signup from './views/Signup';
+import Contact from './views/Contact';
 
 class App extends React.Component {
 
@@ -35,10 +35,9 @@ class App extends React.Component {
         children={() => (
           <Switch>
             <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-            <AppRoute exact path="/secondary" component={Secondary} layout={LayoutAlternative} />
-            <AppRoute exact path="/login" component={Login} layout={LayoutSignin} />
-            <AppRoute exact path="/signup" component={Signup} layout={LayoutSignin} />
-            <AppRoute exact path="/contact" component={Signup} layout={LayoutDefault} />
+            <AppRoute exact path="/gallery" component={Gallery} layout={LayoutAlternative} />
+            <AppRoute exact path="/contact" component={Contact} layout={LayoutSignin} />
+
           </Switch>
         )} />
     );

@@ -56,8 +56,8 @@ class FeaturesTiles extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Build up the whole picture',
-      paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+      title: 'Skills and Interests',
+      paragraph: 'Well, I like making math and data visualizations. That\'s one thing. Other things include music and stuff.'
     };
 
     return (
@@ -83,7 +83,7 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Robust Workflow
+                      Skill or Interest 1
                     </h4>
                     <p className="m-0 text-sm">
                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
@@ -105,7 +105,7 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Robust Workflow
+                      Skill or Interest 2
                     </h4>
                     <p className="m-0 text-sm">
                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
@@ -127,7 +127,7 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Robust Workflow
+                      Skill or Interest 3
                     </h4>
                     <p className="m-0 text-sm">
                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
@@ -149,7 +149,7 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Robust Workflow
+                      Skill or Interest 4
                     </h4>
                     <p className="m-0 text-sm">
                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
@@ -157,51 +157,6 @@ class FeaturesTiles extends React.Component {
                   </div>
                 </div>
               </div>
-
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="400">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image mb-16">
-                      <Image
-                        src={featuresTileIcon05}
-                        alt="Features tile icon 05"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8">
-                      Robust Workflow
-                    </h4>
-                    <p className="m-0 text-sm">
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="500">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image mb-16">
-                      <Image
-                        src={featuresTileIcon06}
-                        alt="Features tile icon 06"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8">
-                      Robust Workflow
-                    </h4>
-                    <p className="m-0 text-sm">
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
