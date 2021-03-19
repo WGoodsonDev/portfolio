@@ -11,6 +11,9 @@ import tabIcon03Img from './../../assets/images/features-tabs-icon-03.svg';
 import tabIcon04Img from './../../assets/images/features-tabs-icon-04.svg';
 
 import featuresTabsImg from './../../assets/images/features-tabs-image.png';
+import featuresTabsImg01 from './../../assets/images/ssbmviz_preview.jpg';
+import featuresTabsImg02 from './../../assets/images/ssu_sched.png';
+import featuresTabsImg03 from './../../assets/images/octane_gameplay.png';
 
 const propTypes = {
   ...SectionProps.types
@@ -75,7 +78,7 @@ class FeaturesTabs extends React.Component {
                       height={56} />
                   </div>
                   <div className="text-color-high text-sm">
-                    Project 01
+                    SSBM Combo Visualizer
                   </div>
                 </Tab>
                 <Tab tabId="tab-b">
@@ -87,7 +90,7 @@ class FeaturesTabs extends React.Component {
                       height={56} />
                   </div>
                   <div className="text-color-high text-sm">
-                    Project 02
+                    SSU Scheduler
                   </div>
                 </Tab>
                 <Tab tabId="tab-c">
@@ -99,53 +102,38 @@ class FeaturesTabs extends React.Component {
                       height={56} />
                   </div>
                   <div className="text-color-high text-sm">
-                    Project 03
-                  </div>
-                </Tab>
-                <Tab tabId="tab-d">
-                  <div className="features-tabs-tab-image mb-12">
-                    <Image
-                      src={tabIcon04Img}
-                      alt="Tab icon 04"
-                      width={56}
-                      height={56} />
-                  </div>
-                  <div className="text-color-high text-sm">
-                    Project 04
+                    Octane
                   </div>
                 </Tab>
               </TabList>
               <TabPanel id="tab-a">
                 <Image
                   className="has-shadow"
-                  src={featuresTabsImg}
+                  src={featuresTabsImg01}
                   alt="Features tabs image 01"
                   width={896}
                   height={504} />
+                <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
+                <p>Gonna go ahead and test the default formatting here</p>
+                <p>Need to put link to github / static site</p>
               </TabPanel>
               <TabPanel id="tab-b">
                 <Image
                   className="has-shadow"
-                  src={featuresTabsImg}
+                  src={featuresTabsImg02}
                   alt="Features tabs image 02"
                   width={896}
                   height={504} />
+                <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
               </TabPanel>
               <TabPanel id="tab-c">
                 <Image
                   className="has-shadow"
-                  src={featuresTabsImg}
+                  src={featuresTabsImg03}
                   alt="Features tabs image 03"
                   width={896}
                   height={504} />
-              </TabPanel>
-              <TabPanel id="tab-d">
-                <Image
-                  className="has-shadow"
-                  src={featuresTabsImg}
-                  alt="Features tabs image 04"
-                  width={896}
-                  height={504} />
+                <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
               </TabPanel>
             </Tabs>
           </div>
