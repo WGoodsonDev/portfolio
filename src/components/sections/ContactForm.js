@@ -1,95 +1,160 @@
-import React from 'react';
+import React from "react";
+import axios from "axios";
 
-const axios = require('axios');
+import classNames from 'classnames';
+import { SectionProps } from '../../utils/SectionProps';
+import { Link } from 'react-router-dom';
+import SectionHeader from './partials/SectionHeader';
+import Input from '../elements/Input';
+import Button from '../elements/Button';
 
+const propTypes = {
+    ...SectionProps.types
+}
 
-export default class ContactForm extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            name: "",
-            email: "",
-            organization: "",
-            message: "",
-            status: "Submit"
-        }
+const defaultProps = {
+    ...SectionProps.defaults
+}
+
+class ContactForm extends React.Component{
+
+    state = {
+        submitting: false,
+        status: null
     }
 
-    handleChange(event){
-        const field = event.target.id;
-        if(field === "name"){
-            this.setState({name: event.target.value});
-        } else if(field === "email"){
-            this.setState({email: event.target.value});
-        } else if(field === "organization"){
-            this.setState({organization: event.target.value});
-        } else if(field === "message"){
-            this.setState({message: event.target.value});
-        }
-    }
-
-    handleSubmit(event){
-        event.preventDefault();
-        this.setState({status: "Sending"});
-        axios({
-            method: "POST",
-            url: "http://localhost:8000/contact",
-            data: this.state,
-        }).then((res) => {
-            if(res.data.status === "sent"){
-                alert("Message Sent");
-                this.setState({name: "", email: "", organization: "", message: "", status: "Submit"});
-            } else if(res.data.status === "failed") {
-                alert("Message Failed");
-            }
+    handleServerResponse = (ok, msg, form) => {
+        this.setState({
+            submitting: false,
+            status: { ok, msg }
         });
-    }
+        if(ok) {
+            form.reset();
+        }
+    };
+    handleOnSubmit = event => {
+        event.preventDefault();
+        const form = event.target;
+        this.setState({ submitting: true });
+        axios({
+            method: "post",
+            url: "https://formspree.io/f/mleaeorg",
+            data: new FormData(form)
+        })
+            .then(res => {
+                this.handleServerResponse(true, "Message sent, thanks so much!", form);
+            })
+            .catch(res => {
+                this.handleServerResponse(false, res.response.data.error, form);
+            });
+    };
 
     render() {
-        let buttonText = this.state.status;
+
+        const {
+            className,
+            topOuterDivider,
+            bottomOuterDivider,
+            topDivider,
+            bottomDivider,
+            hasBgColor,
+            invertColor,
+            ...props
+        } = this.props;
+
+        const outerClasses = classNames(
+            'signin section',
+            topOuterDivider && 'has-top-divider',
+            bottomOuterDivider && 'has-bottom-divider',
+            hasBgColor && 'has-bg-color',
+            invertColor && 'invert-color',
+            className
+        );
+
+        const innerClasses = classNames(
+            'signin-inner section-inner',
+            topDivider && 'has-top-divider',
+            bottomDivider && 'has-bottom-divider',
+            'reveal-from-top'
+        );
+
+        const sectionHeader = {
+            title: 'Thanks for stopping by! Want to get in touch?',
+        };
+
         return (
-            <form onSubmit={this.handleSubmit.bind(this)} method="POST">
-                <div>
-                <label htmlFor="name">Name:</label>
-                <input
-                    type="text"
-                    id="name"
-                    value={this.state.name}
-                    onChange={this.handleChange.bind(this)}
-                    required
-                />
+            <section
+                {...props}
+                className={outerClasses}
+            >
+                <div className="container" >
+                    <div className={innerClasses}>
+                        <SectionHeader tag="h1" data={sectionHeader} className="center-content" data-reveal-delay={"150"}/>
+                        <div className="tiles-wrap">
+                            <div className="tiles-item">
+                                <div className="tiles-item-inner">
+                                    <form onSubmit={this.handleOnSubmit}>
+                                        <fieldset>
+                                            <div className="mb-12">
+                                                <Input
+                                                    label={"Name"}
+                                                    placeholder={"Name"}
+                                                    name={"name"}
+                                                    labelHidden
+                                                    required />
+                                            </div>
+                                            <div className="mb-12">
+                                                <Input
+                                                    label={"Organization"}
+                                                    name={"organization"}
+                                                    placeholder={"Organization"}
+                                                    labelHidden
+                                                />
+                                            </div>
+                                            <div className="mb-12">
+                                                <Input
+                                                    type="email"
+                                                    label="Email"
+                                                    name={"email"}
+                                                    placeholder={"Email"}
+                                                    labelHidden
+                                                    required />
+                                            </div>
+                                            <div className="mb-12">
+                                                <Input
+                                                    id={"message"}
+                                                    name={"message"}
+                                                    placeholder={"Message"}
+                                                    type={"textarea"}
+                                                    rows={6}
+                                                    required />
+                                            </div>
+                                            <div className="mt-24 mb-32">
+                                                <Button disabled={this.state.submitting} color="primary" wide>Send Message</Button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div className="signin-bottom has-top-divider">
+                                        <div className="pt-32 text-xs center-content text-color-low">
+                                            {this.state.status && (
+                                                <p className={!this.state.status.ok ? "errorMsg" : ""}>
+                                                    {this.state.status.msg}
+                                                    While you're here, have you checked out my <Link to={"https://github.com/WGoodsonDev"}>GitHub</Link>?
+                                                </p>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <label htmlFor="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    value={this.state.email}
-                    onChange={this.handleChange.bind(this)}
-                    required
-                />
-                </div>
-                <div>
-                    <label htmlFor="organization">Organization:</label>
-                    <input
-                        type="text"
-                        id="organization"
-                        value={this.state.organization}
-                        onChange={this.handleChange.bind(this)}
-                        // required
-                    />
-                </div>
-                <div>
-                <label htmlFor="message">Message:</label>
-                <textarea
-                    id="message"
-                    value={this.state.message}
-                    onChange={this.handleChange.bind(this)}
-                    required
-                />
-                </div>
-                <button type="submit">{buttonText}</button>
-            </form>
+            </section>
         );
     }
 }
+
+ContactForm.propTypes = propTypes;
+ContactForm.defaultProps = defaultProps;
+
+export default ContactForm;

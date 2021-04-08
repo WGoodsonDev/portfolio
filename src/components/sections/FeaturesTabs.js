@@ -11,7 +11,7 @@ import tabIcon03Img from './../../assets/images/features-tabs-icon-03.svg';
 import tabIcon04Img from './../../assets/images/features-tabs-icon-04.svg';
 
 import featuresTabsImg from './../../assets/images/features-tabs-image.png';
-import featuresTabsImg01 from './../../assets/images/ssbmviz_preview.jpg';
+import featuresTabsImg01 from './../../assets/images/combo-viewer-example.jpg';
 import featuresTabsImg02 from './../../assets/images/ssu_sched.png';
 import featuresTabsImg03 from './../../assets/images/octane_gameplay.png';
 
@@ -56,7 +56,7 @@ class FeaturesTabs extends React.Component {
 
     const sectionHeader = {
       title: 'Projects',
-      paragraph: 'These are some projects I have worked on, both in school and on my own.'
+      paragraph: 'These are some of the major projects I have worked on.'
     };
 
     return (
@@ -116,6 +116,9 @@ class FeaturesTabs extends React.Component {
                 <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
                 <p>Gonna go ahead and test the default formatting here</p>
                 <p>Need to put link to github / static site</p>
+                <a href={"http://ssbm-combo-viewer.tech/"}>Link to site</a>
+                <br/>
+                <a href={"https://github.com/WGoodsonDev/ssbm-combo-visualizer"}>GitHub</a>
               </TabPanel>
               <TabPanel id="tab-b">
                 <Image

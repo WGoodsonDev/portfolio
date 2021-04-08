@@ -83,10 +83,10 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Skill or Interest 1
+                      Interactive, Responsive Web Applications
                     </h4>
                     <p className="m-0 text-sm">
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                      I make apps that are cool and fun and you can click on stuff and then it does some stuff because you clicked on it.
                     </p>
                   </div>
                 </div>
@@ -105,10 +105,10 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Skill or Interest 2
+                      Data / Mathematical Visualization
                     </h4>
                     <p className="m-0 text-sm">
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                      I find taking data and presenting it visually in an intuitive way very satisfying. I also love to capture the beauty of math in a visual way.
                     </p>
                   </div>
                 </div>
@@ -127,10 +127,10 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Skill or Interest 3
+                      Computer Graphics
                     </h4>
                     <p className="m-0 text-sm">
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                      From HTML5 Canvas to SVG to WebGL, if you can draw with it, I'm interested. Example tech includes D3.js, Processing/p5.js, WebGl/regl.
                     </p>
                   </div>
                 </div>
@@ -149,10 +149,10 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Skill or Interest 4
+                      Music / Sound Synthesis / Sound Design
                     </h4>
                     <p className="m-0 text-sm">
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                      I am a lifelong musician, and the creation and manipulation of sounds is endlessly fascinating to me. I have experience in analog and digital synthesis, as well as DSP.
                     </p>
                   </div>
                 </div>

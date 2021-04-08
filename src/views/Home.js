@@ -17,7 +17,7 @@ class Home extends React.Component {
         <FeaturesTabs />
         {/*<Testimonial topDivider bottomOuterDivider className="gradient-section" />*/}
         {/*<Pricing topDivider pricingSlider className="has-bg-color-cut" />*/}
-        <Cta hasBgColor invertColor split />
+        {/*<Cta hasBgColor invertColor split />*/}
       </React.Fragment>
     );
   }
