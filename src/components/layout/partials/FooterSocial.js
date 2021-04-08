@@ -18,7 +18,7 @@ const FooterSocial = ({
     >
       <ul className="list-reset">
         <li>
-          <a href="http://linkedin.com/in/warren-goodson/">
+          <a href="http://linkedin.com/in/warren-goodson/" target={"_blank"}>
             <svg
               width="24"
               height="24"
@@ -30,7 +30,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="http://github.com/WGoodsonDev">
+          <a href="http://github.com/WGoodsonDev" target={"_blank"}>
             <svg
               width="24"
               height="24"
@@ -42,7 +42,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="http://codepen.io/budmcchud">
+          <a href="http://codepen.io/budmcchud" target={"_blank"}>
             <svg
               width="24"
               height="24"
