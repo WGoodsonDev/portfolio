@@ -56,7 +56,7 @@ class FeaturesTabs extends React.Component {
 
     const sectionHeader = {
       title: 'Projects',
-      paragraph: 'These are some of the major projects I have worked on.'
+      paragraph: ''
     };
 
     return (

@@ -70,28 +70,6 @@ class FeaturesTiles extends React.Component {
             <SectionHeader data={sectionHeader} className="center-content" />
             <div className={tilesClasses}>
 
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image mb-16">
-                      <Image
-                        src={featuresTileIcon01}
-                        alt="Features tile icon 01"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8">
-                      Interactive, Responsive Web Applications
-                    </h4>
-                    <p className="m-0 text-sm">
-                      I make apps that are cool and fun and you can click on stuff and then it does some stuff because you clicked on it.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="100">
                 <div className="tiles-item-inner">
                   <div className="features-tiles-item-header">
@@ -108,7 +86,7 @@ class FeaturesTiles extends React.Component {
                       Data / Mathematical Visualization
                     </h4>
                     <p className="m-0 text-sm">
-                      I find taking data and presenting it visually in an intuitive way very satisfying. I also love to capture the beauty of math in a visual way.
+                      I love taking data and presenting it visually in an intuitive and interactive way.
                     </p>
                   </div>
                 </div>
@@ -130,7 +108,7 @@ class FeaturesTiles extends React.Component {
                       Computer Graphics
                     </h4>
                     <p className="m-0 text-sm">
-                      From HTML5 Canvas to SVG to WebGL, if you can draw with it, I'm interested. Example tech includes D3.js, Processing/p5.js, WebGl/regl.
+                      HTML5 Canvas, SVG with D3, WebGL shaders.
                     </p>
                   </div>
                 </div>
@@ -152,7 +130,7 @@ class FeaturesTiles extends React.Component {
                       Music / Sound Synthesis / Sound Design
                     </h4>
                     <p className="m-0 text-sm">
-                      I am a lifelong musician, and the creation and manipulation of sounds is endlessly fascinating to me. I have experience in analog and digital synthesis, as well as DSP.
+                      The creation and manipulation of sounds is endlessly fascinating to me. I have experience in analog and digital synthesis, as well as some DSP.
                     </p>
                   </div>
                 </div>
