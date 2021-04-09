@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer02';
+import Footer from '../components/layout/Footer';
 
 const LayoutAlternative = ({ children }) => (
   <React.Fragment>
@@ -12,4 +12,4 @@ const LayoutAlternative = ({ children }) => (
   </React.Fragment>
 );
 
-export default LayoutAlternative;  
+export default LayoutAlternative;

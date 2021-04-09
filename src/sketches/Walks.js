@@ -3,7 +3,7 @@ function Walks(p){
     let canvasWidth = 712;
     let canvasHeight = 520;
 
-    let scaleFactor = 10;
+    let scaleFactor = 5;
 
     let numWalks = 16;
     let walkMinLength = 800;

@@ -24,6 +24,8 @@ import P5Wrapper from 'react-p5-wrapper';
 import Recaman from "../sketches/Recaman";
 import Walks from "../sketches/Walks";
 import PolarRoses from "../sketches/PolarRoses";
+import Collatz from "../sketches/Collatz";
+import Ringz from "../sketches/Ringz";
 
 
 class Gallery extends React.Component {
@@ -62,10 +64,6 @@ class Gallery extends React.Component {
 
     return (
       <React.Fragment>
-        {/*<HeroFull className="illustration-section-01" />*/}
-        {/*<Team />*/}
-        {/*<FeaturesSplit invertMobile imageFill topDivider />*/}
-
         <GenericSection topDivider>
           <div className="container-xs">
             <h2 className="mt-0">Graphics Gallery</h2>
@@ -81,7 +79,7 @@ class Gallery extends React.Component {
             </p>
             <figure>
               <P5Wrapper sketch={Recaman} width={712} height={400}/>
-              <figcaption className="text-color-low">Visualization of the first 1000 terms of the <span role="img" aria-label="mile">Recamán Sequence</span></figcaption>
+              <figcaption className="text-color-low">Visualization of the first 500 terms of the <span role="img" aria-label="mile">Recamán Sequence</span></figcaption>
             </figure>
             <h4>Walks</h4>
             <p>
@@ -111,96 +109,6 @@ class Gallery extends React.Component {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
             </p>
-          </div>
-        </GenericSection>
-
-        <GenericSection topDivider>
-          <div className="container-xs">
-            <SectionHeader data={genericSection01Header} className="center-content" />
-            <Accordion>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut." active>
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-              </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-              </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-              </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-              </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-              </AccordionItem>
-            </Accordion>
-          </div>
-        </GenericSection>
-
-        <GenericSection topDivider className="center-content">
-          <div className="container">
-            <SectionHeader data={genericSection02Header} className="center-content" />
-            <ButtonGroup>
-              <Button color="primary" wideMobile>Get started now</Button>
-              <Button color="secondary" wideMobile>Get started now</Button>
-            </ButtonGroup>
-            <ButtonGroup>
-              <Button color="dark" wideMobile>Get started now</Button>
-              <Button wideMobile>Get started now</Button>
-            </ButtonGroup>
-          </div>
-        </GenericSection>
-
-        <GenericSection topDivider>
-          <div className="container-xs">
-            <SectionHeader data={genericSection03Header} className="center-content" />
-            <form style={formStyle}>
-              <div className="mb-24">
-                <Input
-                  type="email"
-                  label="This is a label"
-                  placeholder="Your best email.."
-                  formGroup="desktop"
-                  labelHidden>
-                  <Button color="primary">Early access</Button>
-                </Input>
-              </div>
-              <div className="mb-24">
-                <Input
-                  type="email"
-                  label="This is a label"
-                  placeholder="Your best email.."
-                  defaultValue="hello@cruip.com"
-                  formGroup="desktop"
-                  labelHidden>
-                  <Button color="primary" loading>Early access</Button>
-                </Input>
-              </div>
-              <div className="mb-24">
-                <Input
-                  type="email"
-                  label="This is a label"
-                  placeholder="Your best email.."
-                  formGroup="desktop"
-                  labelHidden
-                  status="error"
-                  hint="Something is wrong.">
-                  <Button color="primary">Early access</Button>
-                </Input>
-              </div>
-              <div className="mb-24">
-                <Input
-                  type="email"
-                  label="This is a label"
-                  placeholder="Your best email.."
-                  formGroup="desktop"
-                  labelHidden
-                  status="success"
-                  hint="You've done it.">
-                  <Button color="primary">Early access</Button>
-                </Input>
-              </div>
-            </form>
           </div>
         </GenericSection>
 
@@ -245,9 +153,6 @@ class Gallery extends React.Component {
             </Modal>
           </div >
         </GenericSection>
-
-        <Roadmap topDivider />
-        <Cta invertColor split className="has-bg-color-cut" />
       </React.Fragment>
     );
   }

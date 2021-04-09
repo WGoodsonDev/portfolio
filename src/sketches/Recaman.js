@@ -2,7 +2,7 @@ function Recaman(p){
     let canvasWidth = 712;
     let canvasHeight = 400;
 
-    const maxIterations = 1000;
+    const maxIterations = 500;
 
     let recaman;
 
@@ -87,6 +87,10 @@ function Recaman(p){
 
                 p.push();
 
+                // Color based on radius
+                const hue = p.map(radius, 0, canvasWidth / 2, 0, 100);
+                p.stroke(hue, 100, 100);
+
                 if(first > second){//Going from high number to low (under line)
                     p.arc(center, p.height/2, radius, radius, 0, p.PI);
                 } else if(first < second){//Going from low number to high (over line)
@@ -116,6 +120,7 @@ function Recaman(p){
 
     p.setup = () => {
         p.createCanvas(canvasWidth, canvasHeight);
+        p.colorMode(p.HSB, 100);
         recaman = new Sequence();
     }
 
