@@ -65,12 +65,12 @@ class HeroFull extends React.Component {
               </div>
             </div>
             <div className="hero-figure reveal-from-bottom" data-reveal-delay="600">
-              <Image
-                className="has-shadow"
-                src={heroImg}
-                alt="Hero"
-                width={896}
-                height={504} />
+              {/*<Image*/}
+              {/*  className="has-shadow"*/}
+              {/*  src={heroImg}*/}
+              {/*  alt="Hero"*/}
+              {/*  width={896}*/}
+              {/*  height={504} />*/}
             </div>
           </div>
         </div>

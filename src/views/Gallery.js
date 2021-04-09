@@ -56,15 +56,15 @@ class Gallery extends React.Component {
 
     return (
       <React.Fragment>
-        <HeroFull className="illustration-section-01" />
-        <Team />
-        <FeaturesSplit invertMobile imageFill topDivider />
+        {/*<HeroFull className="illustration-section-01" />*/}
+        {/*<Team />*/}
+        {/*<FeaturesSplit invertMobile imageFill topDivider />*/}
 
         <GenericSection topDivider>
           <div className="container-xs">
-            <h2 className="mt-0">Lorem ipsum is placeholder text commonly used in the graphic.</h2>
+            <h2 className="mt-0">Graphics Gallery</h2>
             <p>
-              Lorem ipsum dolor sit amet, <a href="#0">consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Here are some selected p5.js "sketches" that I've used to explore the world of mathematical and data visualization.
             </p>
             <p>
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -76,7 +76,7 @@ class Gallery extends React.Component {
                 alt="Placeholder"
                 width={712}
                 height={400} />
-              <figcaption className="text-color-low">A super-nice image <span role="img" aria-label="mile">😀</span></figcaption>
+              <figcaption className="text-color-low">This is a sketch of <span role="img" aria-label="mile">SOMETHING</span></figcaption>
             </figure>
             <h4>Flexibility</h4>
             <p>
