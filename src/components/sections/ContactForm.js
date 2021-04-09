@@ -63,7 +63,6 @@ class ContactForm extends React.Component{
         } = this.props;
 
         const outerClasses = classNames(
-            'signin section',
             topOuterDivider && 'has-top-divider',
             bottomOuterDivider && 'has-bottom-divider',
             hasBgColor && 'has-bg-color',
@@ -72,10 +71,8 @@ class ContactForm extends React.Component{
         );
 
         const innerClasses = classNames(
-            'signin-inner section-inner',
             topDivider && 'has-top-divider',
             bottomDivider && 'has-bottom-divider',
-            'reveal-from-top'
         );
 
         const sectionHeader = {
@@ -89,7 +86,7 @@ class ContactForm extends React.Component{
             >
                 <div className="container" >
                     <div className={innerClasses}>
-                        <SectionHeader tag="h1" data={sectionHeader} className="center-content" data-reveal-delay={"150"}/>
+                        <h2 className={"center-content"}>Thanks for stopping by!<br/>Want to get in touch?</h2>
                         <div className="tiles-wrap">
                             <div className="tiles-item">
                                 <div className="tiles-item-inner">
@@ -134,7 +131,7 @@ class ContactForm extends React.Component{
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <div className="signin-bottom has-top-divider">
+                                    <div className="has-top-divider">
                                         <div className="pt-32 text-xs center-content text-color-low">
                                             {this.state.status && (
                                                 <p className={!this.state.status.ok ? "errorMsg" : ""}>

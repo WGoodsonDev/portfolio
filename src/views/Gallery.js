@@ -26,6 +26,7 @@ import Walks from "../sketches/Walks";
 import PolarRoses from "../sketches/PolarRoses";
 import Collatz from "../sketches/Collatz";
 import Ringz from "../sketches/Ringz";
+import ContactForm from "../components/sections/ContactForm";
 
 
 class Gallery extends React.Component {
@@ -58,8 +59,8 @@ class Gallery extends React.Component {
       title: 'Input forms - Lorem ipsum is placeholder text commonly used.'
     }
 
-    const genericSection04Header = {
-      title: 'Modal - Lorem ipsum is placeholder text commonly used.'
+    const contactModalHeader = {
+      title: 'Curious about the sketches or the math behind them? Let me know!'
     }
 
     return (
@@ -114,34 +115,19 @@ class Gallery extends React.Component {
 
         <GenericSection topDivider>
           <div className="container-xs">
-            <SectionHeader data={genericSection04Header} className="center-content" />
+            <SectionHeader data={contactModalHeader} className="center-content" />
             <div className="center-content">
               <Button
                 color="primary"
                 aria-controls="demo-modal"
-                onClick={this.openModal}>Open modal</Button>
+                onClick={this.openModal}>Contact Me</Button>
             </div>
             <Modal
-              id="demo-modal"
+              id="contact-modal"
               show={this.state.demoModalActive}
               handleClose={this.closeModal}
             >
-              <div className="center-content">
-                <h3 className="mt-16 mb-8">Join our newsletter</h3>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                </p>
-              </div>
-              <form style={modalFormStyle}>
-                <div className="mb-12">
-                  <Input
-                    type="email"
-                    label="This is a label"
-                    placeholder="Your best email"
-                    labelHidden />
-                </div>
-                <Button color="primary" wide>Subscribe</Button>
-              </form>
+              <ContactForm/>
               <div className="center-content mt-24">
                 <a
                   className="text-xxs fw-500 tt-u"

@@ -25,12 +25,12 @@ class Modal extends React.Component {
 
   componentDidMount() {
     document.addEventListener('keydown', this.keyPress);
-    document.addEventListener('click', this.stopProgagation);
+    document.addEventListener('click', this.stopPropagation);
   }
 
   componentWillUnmount() {
     document.removeEventListener('keydown', this.keyPress);
-    document.removeEventListener('click', this.stopProgagation);
+    document.removeEventListener('click', this.stopPropagation);
   }
 
   componentDidUpdate(prevProps) {
@@ -49,7 +49,7 @@ class Modal extends React.Component {
     e.keyCode === 27 && this.props.handleClose(e);
   }
 
-  stopProgagation = (e) => {
+  stopPropagation = (e) => {
     e.stopPropagation();
   }
 
@@ -80,36 +80,19 @@ class Modal extends React.Component {
             className={classes}
             onClick={handleClose}
           >
-            <div className="modal-inner" onClick={this.stopProgagation}>
-              {video ?
-                <div className="responsive-video">
-                  {videoTag === 'iframe' ?
-                    <iframe
-                      title="video"
-                      src={video}
-                      frameBorder="0"
-                      allowFullScreen
-                    ></iframe> :
-                    <video
-                      v-else
-                      controls
-                      src={video}
-                    ></video>
-                  }
-                </div> :
-                <React.Fragment>
-                  {!closeHidden &&
-                    <button
-                      className="modal-close"
-                      aria-label="close"
-                      onClick={handleClose}
-                    ></button>
-                  }
-                  <div className="modal-content">
-                    {children}
-                  </div>
-                </React.Fragment>
-              }
+            <div className="modal-inner" onClick={this.stopPropagation}>
+              <React.Fragment>
+                {!closeHidden &&
+                  <button
+                    className="modal-close"
+                    aria-label="close"
+                    onClick={handleClose}
+                  />
+                }
+                <div className="modal-content">
+                  {children}
+                </div>
+              </React.Fragment>
             </div>
           </div>
         }
