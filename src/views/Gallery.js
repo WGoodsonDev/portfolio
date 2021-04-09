@@ -18,6 +18,12 @@ import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
 // import image files for clean props passing
 import placeholderImg from './../assets/images/image-placeholder.png';
+// import p5 wrapper for sketches
+import P5Wrapper from 'react-p5-wrapper';
+// import individual sketches
+import Recaman from "../sketches/Recaman";
+import Walks from "../sketches/Walks";
+import PolarRoses from "../sketches/PolarRoses";
 
 
 class Gallery extends React.Component {
@@ -69,14 +75,29 @@ class Gallery extends React.Component {
             <p>
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <h4>Recamán Sequence</h4>
+            <p>
+              This is a description of the Recamán Sequence, hopefully with a bit of math sprinkled in. Need to look impressive with iterative formulas and such.
+            </p>
             <figure>
-              <Image
-                className="image-larger"
-                src={placeholderImg}
-                alt="Placeholder"
-                width={712}
-                height={400} />
-              <figcaption className="text-color-low">This is a sketch of <span role="img" aria-label="mile">SOMETHING</span></figcaption>
+              <P5Wrapper sketch={Recaman} width={712} height={400}/>
+              <figcaption className="text-color-low">Visualization of the first 1000 terms of the <span role="img" aria-label="mile">Recamán Sequence</span></figcaption>
+            </figure>
+            <h4>Walks</h4>
+            <p>
+              In a Theory of Computation class I took in college, I was tasked with studying the behavior of certain classes of random walks. I fell in love with the walks, and wanted to visualize their beauty.
+            </p>
+            <figure>
+              <P5Wrapper sketch={Walks}/>
+              <figcaption className="text-color-low">Random walks. Use the Z and X keys to zoom</figcaption>
+            </figure>
+            <h4>Polar Roses</h4>
+            <p>
+              These are a collection of "rose curves" drawn using polar coordinates.
+            </p>
+            <figure>
+              <P5Wrapper sketch={PolarRoses}/>
+              <figcaption className="text-color-low">Use the A and S keys to step through different curves, and the D key to jump to a random curve.<br/>Use the F key to toggle the outer rose curve.</figcaption>
             </figure>
             <h4>Flexibility</h4>
             <p>
