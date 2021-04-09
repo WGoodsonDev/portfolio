@@ -1,9 +1,16 @@
 import React from 'react';
 import ContactForm from "../components/sections/ContactForm";
+import Footer from "../components/layout/Footer";
 class Contact extends React.Component {
   render() {
     return (
-        <ContactForm/>
+        <>
+          <br/>
+          <br/>
+          <br/>
+          <ContactForm/>
+        </>
+
     );
   }
 }

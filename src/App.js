@@ -36,7 +36,8 @@ class App extends React.Component {
           <Switch>
             <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
             <AppRoute exact path="/gallery" component={Gallery} layout={LayoutAlternative} />
-            <AppRoute exact path="/contact" component={Contact} layout={LayoutSignin} />
+            <AppRoute exact path="/contact" component={Contact} layout={LayoutAlternative} />
+            <AppRoute exact path="/about-me" component={Contact} layout={LayoutDefault} />
 
           </Switch>
         )} />

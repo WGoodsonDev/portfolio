@@ -135,7 +135,7 @@ class ContactForm extends React.Component{
                                         <div className="pt-32 text-xs center-content text-color-low">
                                             {this.state.status && (
                                                 <p className={!this.state.status.ok ? "errorMsg" : ""}>
-                                                    {this.state.status.msg}
+                                                    {this.state.status.msg + " "}
                                                     While you're here, have you checked out my <Link to={"https://github.com/WGoodsonDev"}>GitHub</Link>?
                                                 </p>
                                             )}

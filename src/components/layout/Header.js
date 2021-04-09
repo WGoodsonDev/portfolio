@@ -121,7 +121,7 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        <Link to="/gallery/" onClick={this.closeMenu}>P5.js Gallery</Link>
+                        <Link to="/gallery/" onClick={this.closeMenu}>Visualization Gallery</Link>
                       </li>
                     </ul>
                     {!hideSignin &&

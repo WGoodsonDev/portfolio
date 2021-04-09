@@ -46,19 +46,6 @@ class Gallery extends React.Component {
   }
 
   render() {
-
-    const genericSection01Header = {
-      title: 'FAQ - Lorem ipsum is placeholder text commonly used.'
-    }
-
-    const genericSection02Header = {
-      title: 'Buttons - Lorem ipsum is placeholder text commonly used.'
-    }
-
-    const genericSection03Header = {
-      title: 'Input forms - Lorem ipsum is placeholder text commonly used.'
-    }
-
     const contactModalHeader = {
       title: 'Curious about the sketches or the math behind them? Let me know!'
     }
