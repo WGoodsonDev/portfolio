@@ -3,7 +3,7 @@ function PolarRoses(p){
     let canvasWidth = 712;
     let canvasHeight = 520;
 
-    let n = 2;
+    let n = p.round(p.random(2, 50));
     let d = 50;
     let dStep = 0.00007;
     let rScale;
