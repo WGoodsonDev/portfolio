@@ -116,9 +116,9 @@ class FeaturesTabs extends React.Component {
                 <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
                 <p>Gonna go ahead and test the default formatting here</p>
                 <p>Need to put link to github / static site</p>
-                <a href={"http://ssbm-combo-viewer.tech/"} target={"_blank"}>Link to site</a>
+                <a href={"http://ssbm-combo-viewer.tech/"} target={"_blank"} rel={"noopener noreferrer"}>Link to site</a>
                 <br/>
-                <a href={"https://github.com/WGoodsonDev/ssbm-combo-visualizer"} target={"_blank"}>GitHub</a>
+                <a href={"https://github.com/WGoodsonDev/ssbm-combo-visualizer"} target={"_blank"} rel={"noopener noreferrer"}>GitHub</a>
               </TabPanel>
               <TabPanel id="tab-b">
                 <Image
