@@ -113,9 +113,9 @@ class FeaturesTabs extends React.Component {
                   alt="Features tabs image 01"
                   width={896}
                   height={504} />
-                <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
-                <p>Gonna go ahead and test the default formatting here</p>
-                <p>Need to put link to github / static site</p>
+                <p style={{paddingTop: 32}}>Interactive combo visualizer for the video game Super Smash Bros. Melee built with React, D3, MongoDB, and Express, with game replay analysis powered by Slippi.</p>
+                <p>Users can upload game replay files to the site to help analyze their gameplay in an intuitive visual way not available within the game itself.</p>
+                <p>Inspired by all the amazing tools and software produced by the Melee dev community.</p>
                 <a href={"http://ssbm-combo-viewer.tech/"} target={"_blank"} rel={"noopener noreferrer"}>Link to site</a>
                 <br/>
                 <a href={"https://github.com/WGoodsonDev/ssbm-combo-visualizer"} target={"_blank"} rel={"noopener noreferrer"}>GitHub</a>
@@ -127,7 +127,9 @@ class FeaturesTabs extends React.Component {
                   alt="Features tabs image 02"
                   width={896}
                   height={504} />
-                <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
+                <p style={{paddingTop: 32}}>Full-stack application for scheduling classes in higher education. Built with React, D3, MySQL, and Koa. Work done as Senior Capstone Project at Sonoma State University</p>
+                <p>My responsibilities included maintaining and extending the functionality of the Koa/MySQL REST API.</p>
+                <p>Development is ongoing and the codebase is proprietary.</p>
               </TabPanel>
               <TabPanel id="tab-c">
                 <Image
@@ -136,7 +138,8 @@ class FeaturesTabs extends React.Component {
                   alt="Features tabs image 03"
                   width={896}
                   height={504} />
-                <p>This is a test paragraph that probably should include some kind of description of what this project is</p>
+                <p style={{paddingTop: 32}}>Top-down, card-based, bullet hell shoot-em-up game with an emphasis on challenging boss fights developed with Unreal Engine 4.</p>
+                <p>Awarded Winner: Best Gameplay at Sonoma State Tech Showcase 2019 by industry professionals from Visual Concepts, developers of the NBA 2K series.</p>
               </TabPanel>
             </Tabs>
           </div>

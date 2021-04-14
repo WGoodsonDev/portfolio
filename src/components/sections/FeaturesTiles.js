@@ -57,7 +57,7 @@ class FeaturesTiles extends React.Component {
 
     const sectionHeader = {
       title: 'Skills and Interests',
-      paragraph: 'Well, I like making math and data visualizations. That\'s one thing. Other things include music and stuff.'
+      paragraph: ''
     };
 
     return (
@@ -86,7 +86,7 @@ class FeaturesTiles extends React.Component {
                       Data / Mathematical Visualization
                     </h4>
                     <p className="m-0 text-sm">
-                      I love taking data and presenting it visually in an intuitive and interactive way.
+                      I love to take data and present it visually in an intuitive and often interactive way. Data can come from anywhere and anything, and getting a visual sense of what that data means is invaluable to me.
                     </p>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ class FeaturesTiles extends React.Component {
                       Computer Graphics
                     </h4>
                     <p className="m-0 text-sm">
-                      HTML5 Canvas, SVG with D3, WebGL shaders.
+                      HTML5 Canvas, SVG, WebGL shaders, you name it! From physics simulations to interactive art, the possibilities are endless with the right graphics tools. Graphics help me share some of the absolute magic that is computing.
                     </p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ class FeaturesTiles extends React.Component {
                       Music / Sound Synthesis / Sound Design
                     </h4>
                     <p className="m-0 text-sm">
-                      The creation and manipulation of sounds is endlessly fascinating to me. I have experience in analog and digital synthesis, as well as some DSP.
+                      The creation and manipulation of sounds is endlessly fascinating to me. Modular synthesis, sound design, and music production are some paradigms that I've explored over the course of my sonic journey.
                     </p>
                   </div>
                 </div>
