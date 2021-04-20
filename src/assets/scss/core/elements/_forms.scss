@@ -266,7 +266,7 @@ textarea.form-input {
 			}
 		}
     }
-    
+
     > span {
 
         &:not(.form-switch-icon) {
@@ -310,7 +310,7 @@ textarea.form-input {
             border-radius: 50%;
             cursor: pointer;
             height: $range-thumb-size;
-            width: $range-thumb-size;            
+            width: $range-thumb-size;
         }
 
 		&::-moz-range-thumb {
@@ -325,7 +325,7 @@ textarea.form-input {
             height: $range-thumb-size;
             width: $range-thumb-size;
         }
-        
+
 		&::-ms-thumb {
             background-color: color-bg(range-thumb);
             background-image: inline-svg('<svg width="12" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M8 .5v7L12 4zM0 4l4 3.5v-7z" fill="' + color-icon(range) + '" fill-rule="nonzero"/></svg>');
@@ -337,7 +337,7 @@ textarea.form-input {
             height: $range-thumb-size;
             width: $range-thumb-size;
         }
-        
+
         &::-moz-focus-outer {
             border: 0;
         }
@@ -394,7 +394,7 @@ textarea.form-input {
 	.form-select {
 	    background-image: inline-svg('<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 11.4L2.6 6 4 4.6l4 4 4-4L13.4 6 8 11.4z" fill="' + color-icon(select-arrow-inverse) + '" fill-rule="evenodd"/></svg>');
     }
-    
+
     .form-checkbox,
     .form-radio {
         color: color(check-radio-inverse);
@@ -406,8 +406,8 @@ textarea.form-input {
 		input {
 
 			&:checked {
-				background-color: color-bg(check-checked-inverse) !important;
-				border-color: color-bg(check-checked-inverse) !important;
+				//background-color: color-bg(check-checked-inverse) !important;
+				//border-color: color-bg(check-checked-inverse) !important;
 			}
 		}
 	}
@@ -426,7 +426,7 @@ textarea.form-input {
 			}
 		}
     }
-    
+
     .form-slider {
 
         input[type=range] {
@@ -441,13 +441,13 @@ textarea.form-input {
                 background-color: color-bg(range-thumb-inverse);
                 background-image: inline-svg('<svg width="12" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M8 .5v7L12 4zM0 4l4 3.5v-7z" fill="' + color-icon(range-inverse) + '" fill-rule="nonzero"/></svg>');
             }
-            
+
             &::-ms-thumb {
                 background-color: color-bg(range-thumb-inverse);
                 background-image: inline-svg('<svg width="12" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M8 .5v7L12 4zM0 4l4 3.5v-7z" fill="' + color-icon(range-inverse) + '" fill-rule="nonzero"/></svg>');
-            }           
+            }
         }
-    }    
+    }
 }
 
 .form-group {

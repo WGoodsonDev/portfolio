@@ -61,17 +61,31 @@ class Gallery extends React.Component {
             <p>
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h4>Recamán Sequence</h4>
+            <h4>Recamán's Sequence</h4>
             <p>
-              This is a description of the Recamán Sequence, hopefully with a bit of math sprinkled in. Need to look impressive with iterative formulas and such.
+              Recamán's Sequence is an integer sequence where the term a<sub>n</sub> is defined by the rules:<br/><br/>
+              1) If n = 0, a<sub>n</sub> = 0.<br/>
+              2) If a<sub>n-1</sub> - n > 0 and is not already found in the sequence, a<sub>n</sub> = a<sub>n-1</sub> - n.<br/>
+              3) Otherwise,  a<sub>n</sub> = a<sub>n-1</sub> + n.
+            </p>
+            <p>
+              In simpler terms, start with n = 0. The first term a<sub>0</sub> will be 0 by the first rule.<br/><br/>
+              For the next term, n = 1, so a<sub>1</sub> will equal 0 + 1, or 1. Similarly, a<sub>2</sub> will equal 1 + 2, or 3, and a<sub>3</sub> will equal 3 + 3, or 6.<br/><br/>
+              For a<sub>4</sub>, since 6 - 4 > 0, we instead subtract n from our term, giving us 6 - 4 = 2. And since 2 has not appeared in the sequence yet, we keep it as a<sub>4</sub>.
+            </p>
+            <p>
+              This visualization is based on a Numberphile video where the jumps along the number line that the sequence takes are shown using semicircles, with semicircles above the line corresponding to steps using Rule 2, and semicircles below corresponding to steps using Rule 3.
             </p>
             <figure>
               <P5Wrapper sketch={Recaman} width={712} height={400}/>
-              <figcaption className="text-color-low">Visualization of the first 500 terms of the <span role="img" aria-label="mile">Recamán Sequence</span></figcaption>
+              <figcaption className="text-color-low">Visualization of the first 500 terms of <span role="img" aria-label="mile">Recamán's Sequence</span></figcaption>
             </figure>
             <h4>Walks</h4>
             <p>
-              In a Theory of Computation class I took in college, I was tasked with studying the behavior of certain classes of random walks. I fell in love with the walks, and wanted to visualize their beauty.
+              In a Theory of Computation class I took in college, I was tasked with studying the behavior of certain classes of random walks. I fell in love with the walk as a mathematical object, and wanted to visualize its beauty.
+            </p>
+            <p>
+              These walks are not self-avoiding, but they are restricted from doubling back on themselves. For example, if a step is taken in the up direction, the next step cannot be in the down direction.
             </p>
             <figure>
               <P5Wrapper sketch={Walks}/>
@@ -81,22 +95,16 @@ class Gallery extends React.Component {
             <p>
               These are a collection of "rose curves" drawn using polar coordinates.
             </p>
+            <p>
+              Polar roses are of the form r = a * sin(2&theta;) or r = a * cos(2&theta;), and in this visualization they form the outer "petals" of the figures.
+            </p>
+            <p>
+              The moving shapes within the roses are simply lines with vertices on the curve itself, whose endpoints are travelling along the curve at a constant speed. This creates a striking visual effect that reveals a lot about the geometry of the curves.
+            </p>
             <figure>
               <P5Wrapper sketch={PolarRoses}/>
               <figcaption className="text-color-low">Use the A and S keys to step through different curves, and the D key to jump to a random curve.<br/>Use the F key to toggle the outer rose curve.</figcaption>
             </figure>
-            <h4>Flexibility</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur.</li>
-            </ul>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
           </div>
         </GenericSection>
 

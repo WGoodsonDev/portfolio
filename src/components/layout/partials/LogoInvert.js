@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Image from '../../elements/Image';
 
-import logoImg from './../../../assets/images/logo.svg';
+import logoImg from './../../../assets/images/logo.png';
 
 const Logo = ({
   className,
